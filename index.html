@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <style>
+        body{
+            background-color: #0000e6;
+        }
+        .box{
+            padding: 20px;
+            max-width: 600px;
+            min-height: 300px;
+            background-color: #fff;
+            border-radius: 5px;
+        }
+        /* .container{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+        } */
+        .js-input{
+            width: 100%;
+            padding: 12px 20px;
+            margin: 8px 0;
+            /* margin-bottom: 8px; */
+            box-sizing: border-box;
+            border-radius: 0;
+
+            border: none !important;
+            border-bottom: 2px solid black !important;
+        }
+        .input-group{
+            align-items: center !important;
+        }
+        .btn-gr{
+            color: gray;
+            font-weight: 700;
+            font-size: 26px;
+        }
+        @media screen and (max-width:480px) {
+            .btn-gr{
+            color: gray;
+            font-weight: 500;
+            font-size: 16px;
+        }
+        }
+        .btn-gr:active,.btn-gr:hover{
+            color: #000 !important;
+        }
+        .btn-change{
+            padding: 11px 20px;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container  ">
+     <div class="box mx-auto mt-5">
+
+        <form class="js-form ">
+            <div class="input-group mb-3 mt-5">
+                <input type="number" placeholder="Enter tab index" class="form-control js-input " aria-describedby="button-addon2">
+                <button class="btn-change" id="button-addon2" type="button">Change tab</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn-gr btn border-0 btn-positive">Positive</button>
+                <button type="button" class="btn-gr btn border-0 btn-negative">Negative</button>
+                <button type="button" class="btn-gr btn border-0 btn-neutral">Neutral</button>
+              </div>
+        </form>
+
+        <h4 class="h4 js-heading mt-3"></h4>
+     </div>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+</html>
